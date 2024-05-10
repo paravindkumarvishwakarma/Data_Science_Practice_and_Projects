@@ -3,7 +3,7 @@
 #House Price Prediction
 
 # Step 1: Import library
-import pandas as pd
+import pandas as pd #pip install pandas
 
 # Step 2: Import data
 house = pd.read_csv('https://github.com/YBI-Foundation/Dataset/raw/main/House%20Prices.csv')
