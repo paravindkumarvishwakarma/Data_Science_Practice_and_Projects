@@ -10,8 +10,10 @@ X = lifesat[["GDP per capita (USD)"]].values
 y = lifesat[["Life satisfaction"]].values
 
 # Visualize the data
-lifesat.plot(kind='scatter', grid=True,
-  x="GDP per capita (USD)", y="Life satisfaction")
+lifesat.plot(kind='scatter',
+             grid=True,
+             x="GDP per capita (USD)",
+             y="Life satisfaction")
 plt.axis([23_500, 62_500, 4, 9])
 plt.show()
 
@@ -22,5 +24,5 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Make a prediction for Cyprus
-X_new = [[37_655.2]] # Cyprus' GDP per capita in 2020
-print(model.predict(X_new)) # output: [[6.30165767]]
+X_new = [[37_655.2]]  # Cyprus' GDP per capita in 2020
+print(model.predict(X_new))  # output: [[6.30165767]]
